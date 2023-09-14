@@ -1,0 +1,122 @@
+{
+  "name": "gibbs-front",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@date-io/date-fns": "^1.3.13",
+    "@fortawesome/fontawesome-pro": "^5.15.3",
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-regular-svg-icons": "^5.15.2",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/pro-light-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@localazy/cli": "^1.4.1",
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/data-grid": "^4.0.0-alpha.21",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "@material-ui/pickers": "^3.2.10",
+    "@material-ui/x-grid": "^4.0.0-alpha.21",
+    "@material-ui/x-grid-data-generator": "^4.0.0-alpha.21",
+    "@progress/kendo-data-query": "^1.5.4",
+    "@progress/kendo-drawing": "^1.9.4",
+    "@progress/kendo-licensing": "^1.1.4",
+    "@progress/kendo-react-animation": "^4.4.0",
+    "@progress/kendo-react-common": "^4.5.0",
+    "@progress/kendo-react-data-tools": "^4.4.0",
+    "@progress/kendo-react-dateinputs": "^4.4.0",
+    "@progress/kendo-react-dialogs": "^4.4.0",
+    "@progress/kendo-react-dropdowns": "^4.4.0",
+    "@progress/kendo-react-form": "^4.4.0",
+    "@progress/kendo-react-grid": "^4.5.0",
+    "@progress/kendo-react-inputs": "^4.4.0",
+    "@progress/kendo-react-intl": "^4.4.0",
+    "@progress/kendo-react-layout": "^4.4.0",
+    "@progress/kendo-react-notification": "^4.5.0",
+    "@progress/kendo-react-progressbars": "^4.4.0",
+    "@progress/kendo-react-scheduler": "^4.6.0-dev.202103251119",
+    "@progress/kendo-react-tooltip": "^4.6.0",
+    "@progress/kendo-react-treelist": "^4.4.0",
+    "@progress/kendo-react-treeview": "^4.4.0",
+    "@progress/kendo-theme-default": "^4.35.0",
+    "@progress/kendo-theme-material": "^3.31.1",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.3",
+    "@testing-library/user-event": "^12.6.0",
+    "axios": "^0.21.1",
+    "cldr-core": "^38.1.0",
+    "cldr-dates-full": "^38.1.0",
+    "cldr-numbers-full": "^38.1.0",
+    "date-fns": "^2.17.0",
+    "i18next": "^20.2.1",
+    "license-key-generator": "^1.1.2",
+    "lodash": "^4.17.21",
+    "material-ui-confirm": "^2.1.1",
+    "material-ui-phone-number": "^2.2.6",
+    "material-ui-time-picker": "^1.3.0",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.33",
+    "mui-datatables": "^3.7.6",
+    "node-sass": "^4.14.1",
+    "react": "^17.0.1",
+    "react-beforeunload": "^2.4.0",
+    "react-confirm-alert": "^2.7.0",
+    "react-datepicker": "^3.4.1",
+    "react-dom": "^17.0.1",
+    "react-i18next": "^11.8.13",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-spinners": "^0.10.6",
+    "react-spring": "^8.0.27",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "rrule": "^2.6.8",
+    "styled-components": "^5.2.1",
+    "styled-normalize": "^8.0.7",
+    "swiper": "^6.6.1",
+    "use-force-update": "^1.0.7",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "cypress:run": "cypress run",
+    "cypress:open": "cypress open",
+    "start_test": "start-server-and-test start 3000 cypress:run"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "localazy upload && localazy download && git add -A src/assets/locales"
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@progress/kendo-react-labels": "^4.5.0",
+    "cypress": "^7.4.0",
+    "husky": "1.3.1",
+    "start-server-and-test": "^1.12.5",
+    "typescript": "^4.2.4"
+  }
+}
